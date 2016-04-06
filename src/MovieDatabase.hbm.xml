@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.MovieDatabase.controller.Movie" table="movies" catalog= "moviedatabase">
+	<id name = "title" type = "string">
+		<column name = "movie_title" not-null = "true" unique = "true" />
+	</id>
+	
+	<property name = "genre" type = "string">
+		<column name = "movie_genre" not-null = "true" unique = "false" />
+	</property>
+	
+</class>
+
+</hibernate-mapping>
