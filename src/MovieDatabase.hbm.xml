@@ -12,6 +12,10 @@
 		<column name = "movie_genre" not-null = "true" unique = "false" />
 	</property>
 	
+	<property name = "releaseDate" type = "int">
+		<column name = "release_date" not-null = "true" unique = "false" />
+	</property>
+	
 </class>
 
 </hibernate-mapping>

@@ -22,7 +22,6 @@
 	<option value = "documentary">Documentary</option>
 	<option value = "drama">Drama</option>
 </select>
-<!-- <input class = "genre" type = "text" name = "genre" placeholder = "Genre"> -->
 <!-- <input class = "title" type = "text" name = "title" placeholder = "Title"> -->
 <input class = "submit" id = "submit" name = "submit" type = "submit" value = "SEARCH"> 
 </form>

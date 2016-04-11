@@ -4,6 +4,7 @@ public class Movie {
 
 	private String title;
 	private String genre;
+	private int releaseDate;
 	
 	public Movie () {}
 
@@ -23,4 +24,11 @@ public class Movie {
 		this.genre = genre;
 	}
 	
+	public int getReleaseDate() {
+		return releaseDate;
+	}
+	
+	public void setReleaseDate(int releaseDate) {
+		this.releaseDate = releaseDate;
+	}
 }

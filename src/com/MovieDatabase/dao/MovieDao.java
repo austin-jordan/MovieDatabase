@@ -12,7 +12,7 @@ import com.MovieDatabase.controller.Movie;
 
 public class MovieDao {
 	
-	public void addMovie (Movie movie1) {
+	public void addMovies (List<Movie> mList) {
 		
 		Session session = (new Configuration().configure().buildSessionFactory()).openSession();
 
@@ -20,7 +20,8 @@ public class MovieDao {
 		
 		
 	      try{
-	         session.save(movie1); 
+	    	  for(Movie movie: mList)
+	         session.save(movie); 
 	         tx.commit();
 	      }catch (HibernateException e) {
 	         if (tx!=null) tx.rollback();

@@ -24,7 +24,7 @@
           <li class = "search-result-li">
           <div class = "row">
               <div class = "col-md-6" id = "movie">
-              <h3>${movie.getTitle()}</h3>
+              <h3>${movie.getTitle()} (${movie.getReleaseDate()})</h3>
               </div>
           </div>
           </li>
