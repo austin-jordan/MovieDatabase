@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
@@ -36,11 +37,16 @@ public class siteControllerMappings {
 		session.beginTransaction();
 		
 		Criteria criteria = session.createCriteria(Movie.class);
-		
+		if(genre.equalsIgnoreCase("all")) {
+			Query query = session.createQuery("From Movie");
+		}
+		else {
 		criteria.add(Restrictions.like("genre", genre));
-		
+		}
 		results = (ArrayList<Movie>) criteria.list();
 		
 		return new ModelAndView("resultspage", "movieList", results);
 	}
+	
+	
 }

@@ -15,6 +15,7 @@
 <form action = "search" id = "searchForm" method = "get">
 <select name = "genre" required>
 	<option selected disabled>Select Genre</option>
+	<option value = "all">All</option>
 	<option value = "action">Action</option>
 	<option value = "adventure">Adventure</option>
 	<option value = "animated">Animated</option>
@@ -22,6 +23,9 @@
 	<option value = "documentary">Documentary</option>
 	<option value = "drama">Drama</option>
 </select>
+
+<input class = "year" type = "int" name = "year" placeholder = "Select Year">
+
 <!-- <input class = "title" type = "text" name = "title" placeholder = "Title"> -->
 <input class = "submit" id = "submit" name = "submit" type = "submit" value = "SEARCH"> 
 </form>
